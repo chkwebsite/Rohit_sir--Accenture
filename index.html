@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/sites_mainstyle.css">
+  <link rel="stylesheet" href="assets/css/theme-color/color.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-icons.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/dataTables.bootstrap5.min.css">
+  <link rel="stylesheet" href="assets/css/bootstrap-select.min.css">
+  <title>||Accenture||</title>
+
+</head>
+<body class="ss side-warper  bg-light">
+  <div class="container-fluid">
+    <div class="row top-header-bg d-none">
+      <div class="col-sm-12">
+        <nav class="navbar navbar-expand-sm justify-content-end top-header py-0">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link 1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link 2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link 3</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" data-bs-toggle="offcanvas" data-bs-target="#demo">
+                <i class="fa fa-cog spinner-grow"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+
+      <div class="offcanvas offcanvas-end p-0" id="demo">
+        <div class="offcanvas-header border-bottom">
+          <h3 class="offcanvas-title">Website Setting</h3>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+          <h4>Nevigation Setting</h4>
+          <button type="button" class="btn btn-outline-primary" id="top_menu">TopMenu</button>
+          <button type="button" class="btn btn-outline-primary" id="side_menu">SideMenu</button>
+          <hr>
+          <h4>Color Setting</h4>
+          <button type="button" class="btn btn-link default-color" title="Default"><i class="fa fa-circle default-color "></i></button>
+          <button type="button" class="btn btn-link purple-color" title="Purple"><i class="fa fa-circle purple-color"></i></button>
+          <button type="button" class="btn btn-link red-color" title="Red"><i class="fa fa-circle text-red"></i></button>
+          <button type="button" class="btn btn-link black-color" title="Blcak"><i class="fa fa-circle text-black"></i></button>
+          <button type="button" class="btn btn-link pink-color" title="Pink"><i class="fa fa-circle text-pink"></i></button>
+          <button type="button" class="btn btn-link yellow-color" title="Yellow"> <i class="fa fa-circle text-yellow"></i></button>
+          <button type="button" class="btn btn-link bluegreen-color" title="Blue Green"><i class="fa fa-circle text-bluegreen"></i></button>
+          <button type="button" class="btn btn-link navyblue-color" title="Navy Blue"><i class="fa fa-circle text-navyblue"></i></button>
+                        
+        </div>
+      </div>
+
+
+
+    </div>
+    <div class="row logo-header">
+      <div class="col-sm-12 p-0">
+        <nav class="navbar navbar-expand-lg navbar-light py-0 shd">
+          <div class="container-fluid">
+            <a class="navbar-brand py-0" href="#">
+              <img src="assets/images/accenture-logo-wh.png" style="height: 50px;padding: 3px 0px;">
+            </a>
+              <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <!-- <a class="nav-link" aria-current="page" href="#">Home</a> -->
+                  <a href="#" class="sm-toggle btn btn-outline-light">
+                    <i class="fa-solid fa-bars-staggered"></i>
+                  </a>
+                </li>
+              </ul>
+              <ul class="navbar-nav ms-auto ">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle p-color" href="#" role="button" data-bs-toggle="dropdown">
+                    <i class="fa-solid fa-building-user p-color"></i> MicroAdmin
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-end">
+                    <li class="text-center">
+                      <div class="user-details">
+                        <div>
+                        <img src="assets/images/accenture-logo-icon.png" style="width: 100%;">
+                    </div>
+                        <p class="mb-0">Micro Admin</p>
+                        <small>Administrator</small>
+                        <hr class="m-2">
+                        <!-- <button type="button" class="btn btn-primary float-start p-1">Profile</button> -->
+                        <a href="login.html" class="btn btn-danger rounded-5 w-75 p-1">Logout</a>
+                    </div>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            
+          </div>
+        </nav>
+      </div>
+    </div>    
+  </div>
+<div class="body-warper">
+  <div class="sidebar-warper shadow bg-light">
+    <div class="user-info p-2">
+      <span class="sh-sm">A.R</span>
+      <span class="sh-lg">Application Root</span>
+      <a class="sidebar-toggle float-end arrows-right" id="side-collapse" href="#"> <span></span> </a>
+  </div>
+  <nav class="side-m">
+        <ul class="navbar-nav ">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#" style="height: 35px;padding: 12px 0px;">
+              <i class="fa fa-dashboard"></i>
+              <span>Dashboard</span> 
+            </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+              data-bs-auto-close="outside"><i class="fa-solid fa-circle-chevron-down"></i>
+              <span>Multilevel</span></a>
+            <ul class="dropdown-menu shadow asd">
+              <li><a class="dropdown-item" href="#"><i class="fa-solid fa-circle-half-stroke"></i>Gallery</a></li>
+              <li><a class="dropdown-item" href="blog.html"><i class="fa-solid fa-circle-half-stroke"></i>Blog</a></li>
+              <!-- <li class="dropstart">
+                <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown">Submenu Left</a>
+                <ul class="dropdown-menu shadow">
+                  <li><a class="dropdown-item" href=""> Third level 1</a></li>
+                  <li><a class="dropdown-item" href=""> Third level 2</a></li>
+                  <li><a class="dropdown-item" href=""> Third level 3</a></li>
+                  <li><a class="dropdown-item" href=""> Third level 4</a></li>
+                  <li><a class="dropdown-item" href=""> Third level 5</a></li>
+                </ul>
+              </li> -->
+              <li class="dropend">
+                <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown"
+                  data-bs-auto-close="outside">
+                  <i class="fa-solid fa-circle-half-stroke"></i>
+              <span>Submenu Right</span></a>
+                <ul class="dropdown-menu shadow">
+                  <li><a class="dropdown-item" href=""><i class="fa-solid fa-circle-half-stroke"></i> Second level 1</a></li>
+                  <li><a class="dropdown-item" href=""><i class="fa-solid fa-circle-half-stroke"></i> Second level 2</a></li>
+                  <li><a class="dropdown-item" href=""><i class="fa-solid fa-circle-half-stroke"></i> Second level 3</a></li>
+                  <li class="dropend">
+                    <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown"
+                      data-bs-auto-close="outside"><i class="fa-solid fa-circle-half-stroke"></i>
+                      <span>Let's go deeper!</span></a>
+                    <ul class="dropdown-menu dropdown-submenu shadow">
+                      <li><a class="dropdown-item" href=""><i class="fa-solid fa-circle-half-stroke"></i> Third level 1</a></li>
+                      <li><a class="dropdown-item" href=""><i class="fa-solid fa-circle-half-stroke"></i> Third level 2</a></li>
+                      <li><a class="dropdown-item" href=""><i class="fa-solid fa-circle-half-stroke"></i> Third level 3</a></li>
+                      <li><a class="dropdown-item" href=""><i class="fa-solid fa-circle-half-stroke"></i> Third level 4</a></li>
+                      <li class="dropend">
+                        <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown">
+                          <i class="fa-solid fa-circle-half-stroke"></i>
+                          <span>Go much deeper!</span></a>
+                        <ul class="dropdown-menu dropdown-submenu shadow">
+                          <li><a class="dropdown-item" href=""><i class="fa-solid fa-circle-half-stroke"></i> Third level 1</a></li>
+                          <li><a class="dropdown-item" href=""><i class="fa-solid fa-circle-half-stroke"></i> Third level 2</a></li>
+                          <li><a class="dropdown-item" href=""><i class="fa-solid fa-circle-half-stroke"></i> Third level 3</a></li>
+                          <li><a class="dropdown-item" href=""><i class="fa-solid fa-circle-half-stroke"></i> Third level 4</a></li>
+                          <li><a class="dropdown-item" href=""><i class="fa-solid fa-circle-half-stroke"></i> Third level 5</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li><a class="dropdown-item" href=""><i class="fa-solid fa-circle-half-stroke"></i> Third level 5</a></li>
+                </ul>
+              </li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#"><i class="fa-solid fa-circle-half-stroke"></i> Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fa fa-link"></i> <span>Link</span></a>
+          </li>
+          <li class="nav-item dropdown dropdown-mega position-static d-none">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+              data-bs-auto-close="outside">Megamenu</a>
+            <div class="dropdown-menu shadow">
+              <div class="mega-content px-4">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-12 col-sm-4 col-md-3 py-4">
+                      <h5>Pages</h5>
+                      <div class="list-group">
+                        <a class="list-group-item" href="#">Accomodations</a>
+                        <a class="list-group-item" href="#">Terms & Conditions</a>
+                        <a class="list-group-item" href="#">Privacy</a>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-4 col-md-3 py-4">
+                      <h5>Card</h5>
+                      <div class="card">
+                        <img src="https://via.placeholder.com/320x180" class="img-fluid" alt="image">
+                        <div class="card-body">
+                          <p class="card-text">Some quick example text to build on the card title and make up the
+                            bulk of the card's content.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-sm-4 col-md-3 py-4">
+                      <h5>Lot of Pages</h5>
+                      <p>Lorem ipsum dolo sit achmet muhamed borlan de irtka.
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-3 py-4">
+                      <h5>Damn, so many</h5>
+                      <div class="list-group">
+                        <a class="list-group-item" href="#">Accomodations</a>
+                        <a class="list-group-item" href="#">Terms & Conditions</a>
+                        <a class="list-group-item" href="#">Privacy</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+  </nav>
+  </div>
+  <div class="content-warper" style="padding-top: 12px;padding-bottom: 12px;">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="page-header">
+            <img class="" src="assets/images/accenture-logo-icon.png">
+            Dashboard
+          </div>
+        </div>
+       </div>
+       <div class="row">
+        <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6">
+          <div class="tiles">
+              <div class="small-box bg-gradient-success">
+                  <div class="inner bg-bob">
+                      <h3>150</h3>
+
+                      <p class="mb-0 block-ellipsis">New Orders</p>
+                  </div>
+                  <div class="icon">
+                      
+                      <svg class="svg-inline--fa fa-cart-plus ion" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="cart-plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M96 0C107.5 0 117.4 8.19 119.6 19.51L121.1 32H541.8C562.1 32 578.3 52.25 572.6 72.66L518.6 264.7C514.7 278.5 502.1 288 487.8 288H170.7L179.9 336H488C501.3 336 512 346.7 512 360C512 373.3 501.3 384 488 384H159.1C148.5 384 138.6 375.8 136.4 364.5L76.14 48H24C10.75 48 0 37.25 0 24C0 10.75 10.75 0 24 0H96zM272 180H316V224C316 235 324.1 244 336 244C347 244 356 235 356 224V180H400C411 180 420 171 420 160C420 148.1 411 140 400 140H356V96C356 84.95 347 76 336 76C324.1 76 316 84.95 316 96V140H272C260.1 140 252 148.1 252 160C252 171 260.1 180 272 180zM128 464C128 437.5 149.5 416 176 416C202.5 416 224 437.5 224 464C224 490.5 202.5 512 176 512C149.5 512 128 490.5 128 464zM512 464C512 490.5 490.5 512 464 512C437.5 512 416 490.5 416 464C416 437.5 437.5 416 464 416C490.5 416 512 437.5 512 464z"></path></svg><i class="ion fa-solid fa-cart-plus"></i> 
+                  </div>
+                  <!-- <a href="#" class="small-box-footer">More info <svg class="svg-inline--fa fa-circle-arrow-right" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="circle-arrow-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256 0C114.6 0 0 114.6 0 256c0 141.4 114.6 256 256 256s256-114.6 256-256C512 114.6 397.4 0 256 0zM406.6 278.6l-103.1 103.1c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25L306.8 288H128C110.3 288 96 273.7 96 256s14.31-32 32-32h178.8l-49.38-49.38c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l103.1 103.1C414.6 241.3 416 251.1 416 256C416 260.9 414.6 270.7 406.6 278.6z"></path></svg><i class="fa fa-arrow-circle-right"></i> Font Awesome fontawesome.com</a> -->
+              </div>
+          </div>
+      </div>
+      <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6">
+          <div class="tiles">
+              <div class="small-box bg-gradient-warning">
+                  <div class="inner bg-bob">
+                      <h3>150</h3>
+
+                      <p class="mb-0 block-ellipsis">New Orders</p>
+                  </div>
+                  <div class="icon">
+                      <svg class="svg-inline--fa fa-cart-plus ion" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="cart-plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M96 0C107.5 0 117.4 8.19 119.6 19.51L121.1 32H541.8C562.1 32 578.3 52.25 572.6 72.66L518.6 264.7C514.7 278.5 502.1 288 487.8 288H170.7L179.9 336H488C501.3 336 512 346.7 512 360C512 373.3 501.3 384 488 384H159.1C148.5 384 138.6 375.8 136.4 364.5L76.14 48H24C10.75 48 0 37.25 0 24C0 10.75 10.75 0 24 0H96zM272 180H316V224C316 235 324.1 244 336 244C347 244 356 235 356 224V180H400C411 180 420 171 420 160C420 148.1 411 140 400 140H356V96C356 84.95 347 76 336 76C324.1 76 316 84.95 316 96V140H272C260.1 140 252 148.1 252 160C252 171 260.1 180 272 180zM128 464C128 437.5 149.5 416 176 416C202.5 416 224 437.5 224 464C224 490.5 202.5 512 176 512C149.5 512 128 490.5 128 464zM512 464C512 490.5 490.5 512 464 512C437.5 512 416 490.5 416 464C416 437.5 437.5 416 464 416C490.5 416 512 437.5 512 464z"></path></svg><!-- <i class="ion fa-solid fa-cart-plus"></i> Font Awesome fontawesome.com -->
+                  </div>
+                  <!-- <a href="#" class="small-box-footer">More info <svg class="svg-inline--fa fa-circle-arrow-right" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="circle-arrow-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256 0C114.6 0 0 114.6 0 256c0 141.4 114.6 256 256 256s256-114.6 256-256C512 114.6 397.4 0 256 0zM406.6 278.6l-103.1 103.1c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25L306.8 288H128C110.3 288 96 273.7 96 256s14.31-32 32-32h178.8l-49.38-49.38c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l103.1 103.1C414.6 241.3 416 251.1 416 256C416 260.9 414.6 270.7 406.6 278.6z"></path></svg><i class="fa fa-arrow-circle-right"></i> Font Awesome fontawesome.com</a> -->
+              </div>
+          </div>
+      </div>
+      <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6">
+          <div class="tiles">
+              <div class="small-box bg-gradient-dark">
+                  <div class="inner bg-bob">
+                      <h3>150</h3>
+
+                      <p class="mb-0 block-ellipsis">New Orders</p>
+                  </div>
+                  <div class="icon">
+                      <svg class="svg-inline--fa fa-cart-plus ion" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="cart-plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M96 0C107.5 0 117.4 8.19 119.6 19.51L121.1 32H541.8C562.1 32 578.3 52.25 572.6 72.66L518.6 264.7C514.7 278.5 502.1 288 487.8 288H170.7L179.9 336H488C501.3 336 512 346.7 512 360C512 373.3 501.3 384 488 384H159.1C148.5 384 138.6 375.8 136.4 364.5L76.14 48H24C10.75 48 0 37.25 0 24C0 10.75 10.75 0 24 0H96zM272 180H316V224C316 235 324.1 244 336 244C347 244 356 235 356 224V180H400C411 180 420 171 420 160C420 148.1 411 140 400 140H356V96C356 84.95 347 76 336 76C324.1 76 316 84.95 316 96V140H272C260.1 140 252 148.1 252 160C252 171 260.1 180 272 180zM128 464C128 437.5 149.5 416 176 416C202.5 416 224 437.5 224 464C224 490.5 202.5 512 176 512C149.5 512 128 490.5 128 464zM512 464C512 490.5 490.5 512 464 512C437.5 512 416 490.5 416 464C416 437.5 437.5 416 464 416C490.5 416 512 437.5 512 464z"></path></svg><!-- <i class="ion fa-solid fa-cart-plus"></i> Font Awesome fontawesome.com -->
+                  </div>
+                  <!-- <a href="#" class="small-box-footer">More info <svg class="svg-inline--fa fa-circle-arrow-right" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="circle-arrow-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256 0C114.6 0 0 114.6 0 256c0 141.4 114.6 256 256 256s256-114.6 256-256C512 114.6 397.4 0 256 0zM406.6 278.6l-103.1 103.1c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25L306.8 288H128C110.3 288 96 273.7 96 256s14.31-32 32-32h178.8l-49.38-49.38c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l103.1 103.1C414.6 241.3 416 251.1 416 256C416 260.9 414.6 270.7 406.6 278.6z"></path></svg><i class="fa fa-arrow-circle-right"></i> Font Awesome fontawesome.com</a> -->
+              </div>
+          </div>
+      </div>
+      <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-4 col-sm-6">
+          <div class="tiles">
+              <div class="small-box bg-gradient-danger">
+                  <div class="inner bg-bob">
+                      <h3>150</h3>
+
+                      <p class="mb-0 block-ellipsis">New Orders</p>
+                  </div>
+                  <div class="icon">
+                      <svg class="svg-inline--fa fa-cart-plus ion" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="cart-plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M96 0C107.5 0 117.4 8.19 119.6 19.51L121.1 32H541.8C562.1 32 578.3 52.25 572.6 72.66L518.6 264.7C514.7 278.5 502.1 288 487.8 288H170.7L179.9 336H488C501.3 336 512 346.7 512 360C512 373.3 501.3 384 488 384H159.1C148.5 384 138.6 375.8 136.4 364.5L76.14 48H24C10.75 48 0 37.25 0 24C0 10.75 10.75 0 24 0H96zM272 180H316V224C316 235 324.1 244 336 244C347 244 356 235 356 224V180H400C411 180 420 171 420 160C420 148.1 411 140 400 140H356V96C356 84.95 347 76 336 76C324.1 76 316 84.95 316 96V140H272C260.1 140 252 148.1 252 160C252 171 260.1 180 272 180zM128 464C128 437.5 149.5 416 176 416C202.5 416 224 437.5 224 464C224 490.5 202.5 512 176 512C149.5 512 128 490.5 128 464zM512 464C512 490.5 490.5 512 464 512C437.5 512 416 490.5 416 464C416 437.5 437.5 416 464 416C490.5 416 512 437.5 512 464z"></path></svg><!-- <i class="ion fa-solid fa-cart-plus"></i> Font Awesome fontawesome.com -->
+                  </div>
+                  <!-- <a href="#" class="small-box-footer">More info <svg class="svg-inline--fa fa-circle-arrow-right" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="circle-arrow-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M256 0C114.6 0 0 114.6 0 256c0 141.4 114.6 256 256 256s256-114.6 256-256C512 114.6 397.4 0 256 0zM406.6 278.6l-103.1 103.1c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25L306.8 288H128C110.3 288 96 273.7 96 256s14.31-32 32-32h178.8l-49.38-49.38c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l103.1 103.1C414.6 241.3 416 251.1 416 256C416 260.9 414.6 270.7 406.6 278.6z"></path></svg><i class="fa fa-arrow-circle-right"></i> Font Awesome fontawesome.com</a> -->
+              </div>
+          </div>
+      </div>
+      
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="card shadow border-0">
+            <div class="card-body">
+          <div class="table-container-data">
+            <table id="example" class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Firstname</th>
+                  <th>Lastname</th>
+                  <th>Age</th>
+                  <th>City</th>
+                  <th>Country</th>
+                  <th>Sex</th>
+                  <th>Example</th>
+                  <th>Example</th>
+                  <th>Example</th>
+                  <th>Example</th>
+                  <th>Example</th>
+                  <th>Example</th>
+                  <th>Example</th>
+                  <th>Example</th>
+                  <th>Example</th>
+                  <th>Example</th>
+                  <th>Example</th>
+                  <th>Example</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Anna</td>
+                  <td>Pitt</td>
+                  <td>35</td>
+                  <td>New York</td>
+                  <td>USA</td>
+                  <td>Female</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>asd</td>
+                    <td>Pitt</td>
+                    <td>35</td>
+                    <td>New York</td>
+                    <td>USA</td>
+                    <td>Female</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>dfg</td>
+                    <td>Pitt</td>
+                    <td>35</td>
+                    <td>New York</td>
+                    <td>USA</td>
+                    <td>Female</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>fghb</td>
+                    <td>Pitt</td>
+                    <td>35</td>
+                    <td>New York</td>
+                    <td>USA</td>
+                    <td>Female</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>Anna</td>
+                    <td>Pitt</td>
+                    <td>35</td>
+                    <td>New York</td>
+                    <td>USA</td>
+                    <td>Female</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>Anna</td>
+                    <td>Pitt</td>
+                    <td>35</td>
+                    <td>New York</td>
+                    <td>USA</td>
+                    <td>Female</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td>Anna</td>
+                    <td>Pitt</td>
+                    <td>35</td>
+                    <td>New York</td>
+                    <td>USA</td>
+                    <td>Female</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>8</td>
+                    <td>Anna</td>
+                    <td>Pitt</td>
+                    <td>35</td>
+                    <td>New York</td>
+                    <td>USA</td>
+                    <td>Female</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>9</td>
+                    <td>Anna</td>
+                    <td>Pitt</td>
+                    <td>35</td>
+                    <td>New York</td>
+                    <td>USA</td>
+                    <td>Female</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>Anna</td>
+                    <td>Pitt</td>
+                    <td>35</td>
+                    <td>New York</td>
+                    <td>USA</td>
+                    <td>Female</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                  </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+      </div>
+      <div class="row mt-3">
+        <div class="xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12">
+          <div class="card shadow border-0">
+            <div class="card-header">DataTable</div>
+            <div class="card-body">
+          <div class="table-container-data">
+            <table id="example2" class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Firstname</th>
+                  <th>Lastname</th>
+                  <th>Age</th>
+                  <th>City</th>
+                  <th>Country</th>
+                  <th>Sex</th>
+                  <th>Example</th>
+                  <th>Example</th>
+                  <th>Example</th>
+                  <th>Example</th>
+                  <th>Example</th>
+                  <th>Example</th>
+                  <th>Example</th>
+                  <th>Example</th>
+                  <th>Example</th>
+                  <th>Example</th>
+                  <th>Example</th>
+                  <th>Example</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Anna</td>
+                  <td>Pitt</td>
+                  <td>35</td>
+                  <td>New York</td>
+                  <td>USA</td>
+                  <td>Female</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                  <td>Yes</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>asd</td>
+                    <td>Pitt</td>
+                    <td>35</td>
+                    <td>New York</td>
+                    <td>USA</td>
+                    <td>Female</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>dfg</td>
+                    <td>Pitt</td>
+                    <td>35</td>
+                    <td>New York</td>
+                    <td>USA</td>
+                    <td>Female</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>fghb</td>
+                    <td>Pitt</td>
+                    <td>35</td>
+                    <td>New York</td>
+                    <td>USA</td>
+                    <td>Female</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>Anna</td>
+                    <td>Pitt</td>
+                    <td>35</td>
+                    <td>New York</td>
+                    <td>USA</td>
+                    <td>Female</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>Anna</td>
+                    <td>Pitt</td>
+                    <td>35</td>
+                    <td>New York</td>
+                    <td>USA</td>
+                    <td>Female</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td>Anna</td>
+                    <td>Pitt</td>
+                    <td>35</td>
+                    <td>New York</td>
+                    <td>USA</td>
+                    <td>Female</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>8</td>
+                    <td>Anna</td>
+                    <td>Pitt</td>
+                    <td>35</td>
+                    <td>New York</td>
+                    <td>USA</td>
+                    <td>Female</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>9</td>
+                    <td>Anna</td>
+                    <td>Pitt</td>
+                    <td>35</td>
+                    <td>New York</td>
+                    <td>USA</td>
+                    <td>Female</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>Anna</td>
+                    <td>Pitt</td>
+                    <td>35</td>
+                    <td>New York</td>
+                    <td>USA</td>
+                    <td>Female</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                  </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+        </div>
+        <div class="xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12">
+          <div class="card shadow border-0">
+            <div class="card-header">DataForm</div>
+            <div class="card-body" style="min-height: 331px;">
+              <div class="row">
+                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                  <div class="form-floating mb-3 mt-3">
+                    <input type="text" class="form-control" id="ff" placeholder="Enter First Name" name="ff">
+                    <label for="ff">First Name</label>
+                  </div>
+                </div>
+                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                  <div class="form-floating mb-3 mt-3">
+                    <input type="text" class="form-control" id="ln" placeholder="Enter Lastname" name="ln">
+                    <label for="ln">Lastname</label>
+                  </div>
+                </div>
+                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                  <div class="form-floating mb-3 mt-3">
+                    <select class="form-control">
+                      <option></option>
+                      <option>1</option>
+                    </select>
+                    <!-- <input type="text" class="form-control" id="ln" placeholder="Enter Lastname" name="ln"> -->
+                    <label for="ln">Lastname</label>
+                  </div>
+                </div>
+                <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                  <div class="form-floating mt-3 mb-5">
+                    <select class="selectpicker form-control" multiple aria-label="Default select example" data-live-search="true" required>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                        <option value="4">Four</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                        <option value="4">Four</option>
+                      </select>
+                      <label  class="form-label">Multi Select:</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="alert alert-success" role="alert" style="position: fixed;top: 50px;left: 30%;width: 40%;">
+  <button type="button" class="close float-end btn btn-link p-0" style="text-decoration: none;" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+  <strong>Load successfully!</strong> 
+</div>
+</body>
+<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/all.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="assets/js/dataTables.bootstrap5.min.js"></script>
+<script type="text/javascript" src="assets/js/bootstrap-select.min.js"></script>
+<script type="text/javascript">
+  $(document).ready(function () {
+    $('#example').DataTable();
+    $('#example2').DataTable();
+    $(window).scroll(function(){
+      if($(this).scrollTop()> 100){
+        $('.logo-header').addClass('logo-header-fixed')
+        $('.sidebar-warper').addClass('sidebar-warper-fixed')
+      }else{
+        $('.logo-header').removeClass('logo-header-fixed')
+        $('.sidebar-warper').removeClass('sidebar-warper-fixed')
+      }
+    })
+
+
+
+    $('body').addClass(sessionStorage.top);
+    $('#top_menu').click(function () {
+      $('.content-warper').attr('style','padding-left:0px');
+      sessionStorage.sbc = 'tp top-warper bg-light';
+      if (sessionStorage.top != 'tp top-warper') {
+        if ($('body').hasClass('ss side-warper')) {
+          $('body').removeClass('ss side-warper')
+          $('body').addClass('tp top-warper', true);
+          sessionStorage.top = 'tp top-warper';
+          sessionStorage.side = '';
+        } else {
+          $('body').removeClass('top-warper', false)
+          sessionStorage.top = '';
+        }
+      }
+    });
+    $('body').addClass(sessionStorage.side);
+    $('body').attr('class', sessionStorage.sbc)
+    $('#side_menu').click(function () {
+      $('.content-warper').attr('style','padding-left:60px');
+      if (sessionStorage.side != 'ss side-warper') {
+        if ($('body').hasClass('tp top-warper')) {
+          $('body').removeClass('tp top-warper')
+          $('body').addClass('ss side-warper', true);
+          sessionStorage.side = 'ss side-warper';
+          sessionStorage.sbc = 'ss side-warper bg-light';
+          sessionStorage.top = '';
+        }
+        else {
+          $('body').removeClass('side-warper', false);
+          sessionStorage.side = '';
+        }
+      }
+    });
+    // SIDE TOGGLE 
+    $('.sidebar-toggle').click(function(){
+      $('.sidebar-warper').toggleClass('sidebar-warper-lg');
+      $('.content-warper').toggleClass('content-warper-lg');
+      $('.user-info a').toggleClass('arrows-left');
+      $('.sidebar-warper').addClass('sidebar-warper-hover');
+    });
+    $('.sm-toggle').click(function(){
+      $('.sidebar-toggle').trigger("click")
+      $('.sidebar-warper').removeClass('sidebar-warper-hover');
+      $('.sidebar-warper').toggleClass('d-block');
+    })
+  // HOVER TOGGLE
+  $('.sidebar-warper').hover(function(){
+                $('.sidebars nav ul li a i').removeClass('spinner-grow');
+               if( $('.sidebar-warper').hasClass('sidebar-warper-lg') || $('.sidebar-warper').hasClass('sidebar-warper-hover')){
+                $('.sidebar-warper-hover').removeClass('sidebar-warper-hover')
+                
+               }
+               else{
+                $('.sidebar-warper').addClass('sidebar-warper-hover');
+                // $('.sidebars nav ul li a i').toggleClass('spinner-grow');
+               }
+            })
+            $('.s_m').click(function(){
+                $('.sidebars').toggleClass('sidebars-lg')
+                $('.content-warper').toggleClass('content-warper-lg')
+                $('#side-collapse').trigger("click")
+            });
+    });
+  // TOP MENU JS 
+      document.addEventListener('click', function (e) {
+      if (e.target.classList.contains('hamburger-toggle')) {
+        e.target.children[0].classList.toggle('active');
+      }
+    })
+</script>
+<script type="text/javascript">
+  jQuery(function () {
+      initChangeStyleSheet();
+  });
+
+  function initChangeStyleSheet() {
+      var folder_path = 'assets/css/theme-color/';
+      var selector = 'head link[href$="color.css"]';
+      var color = sessionStorage.getItem('ajwebskin');
+
+
+      if (color == null) {
+          selector = 'head link[href$="color.css"]';
+      }
+      else {
+          $(selector).attr('href', folder_path +  color );
+      }
+      $('.default-color').click(function () {
+          $(selector).attr('href', folder_path + 'color.css');
+          sessionStorage.setItem('ajwebskin', 'color.css');
+      });
+      $('.black-color').click(function () {
+          $(selector).attr('href', folder_path + 'black-color.css');
+          sessionStorage.setItem('ajwebskin', 'black-color.css');
+      });
+      $('.red-color').click(function () {
+          $(selector).attr('href', folder_path + 'red-color.css');
+          sessionStorage.setItem('ajwebskin', 'red-color.css');
+      });
+      $('.pink-color').click(function(){
+          $(selector).attr('href', folder_path + 'pink-color.css');
+          sessionStorage.setItem('ajwebskin', 'pink-color.css')
+      })
+      $('.yellow-color').click(function () {
+          $(selector).attr('href', folder_path + 'yellow-color.css');
+          sessionStorage.setItem('ajwebskin', 'yellow-color.css');
+      });
+      $('.bluegreen-color').click(function () {
+          $(selector).attr('href', folder_path + 'bluegreen-color.css');
+          sessionStorage.setItem('ajwebskin', 'bluegreen-color.css');
+
+      });
+      $('.navyblue-color').click(function () {
+          $(selector).attr('href', folder_path + 'navyblue-color.css');
+          sessionStorage.setItem('ajwebskin', 'navyblue-color.css');
+      });
+      $('.purple-color').click(function () {
+          $(selector).attr('href', folder_path + 'purple-color.css');
+          sessionStorage.setItem('ajwebskin', 'purple-color.css');
+      });
+
+  }
+</script>
+<script type="text/javascript">
+window.setTimeout(function() {
+    $(".alert").fadeTo(500, 0).slideUp(500, function(){
+        $(this).remove(); 
+    });
+}, 1000);
+</script>
+</html>
