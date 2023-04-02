@@ -475,6 +475,9 @@ body.side-warper .sidebar-warper nav.side-m ul.navbar-nav li a.nav-link {
   .content-warper {
     padding-left: 0px;
 }
+.user-info a {
+  display: none;
+}
 }
 /* SIDE & CONTENT CSS END  */
 .spinner-grow {
